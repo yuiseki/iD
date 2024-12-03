@@ -3069,6 +3069,7 @@ img.tag-reference-wiki-image {
 .comment-date {
     color: #aaa;
 }
+.inspector-hover .comment-text,
 .comment-text {
     color: #333;
     margin-top: 10px;
@@ -4232,10 +4233,10 @@ li.issue-fix-item button:not(.actionable) .fix-icon {
     border: 1px solid #ccc;
 }
 
-/* scrollbars only when necessary*/
+/* no scrollbars */
 .inspector-hover div {
     overflow-x: visible;
-    overflow-y: auto;
+    overflow-y: visible;
 }
 
 /* hide and remove from layout */
