@@ -4367,9 +4367,11 @@ img.tile {
     opacity: 1;
     transition: opacity 120ms linear;
 }
-.layer-background img.tile {
-    /* Fix visible grid around tiles borders on Chrome */
-    mix-blend-mode: plus-lighter;
+/* Fix visible grid around tiles borders on Chrome */
+@media not ((1.09 < -webkit-device-pixel-ratio < 1.11) or (0.79 < -webkit-device-pixel-ratio < 0.81) or (0.66 < -webkit-device-pixel-ratio < 0.68)) {
+    .layer-background img.tile {
+        mix-blend-mode: plus-lighter;
+    }
 }
 img.tile-removing {
     opacity: 0;
