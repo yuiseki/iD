@@ -45,6 +45,7 @@ _Breaking developer changes, which may affect downstream projects or sites that 
 #### :bug: Bugfixes
 * Fix unsolvable validator error triggered by regional presets ([#10459])
 * Render highway direction cones only on matching parent ways ([#9013])
+* Prevent edit menu from being covered up by street level imagery or other map overlay panels ([#10495])
 #### :earth_asia: Localization
 * Update Sinitic languages in the Multilingual Names field ([#10488], thanks [@winstonsung])
 * Update the list of languages in the Wikipedia field ([#10489])
@@ -60,6 +61,7 @@ _Breaking developer changes, which may affect downstream projects or sites that 
 [#10459]: https://github.com/openstreetmap/iD/pull/10459
 [#10488]: https://github.com/openstreetmap/iD/pull/10488
 [#10489]: https://github.com/openstreetmap/iD/pull/10489
+[#10495]: https://github.com/openstreetmap/iD/issues/10495
 [@winstonsung]: https://github.com/winstonsung/
 
 
