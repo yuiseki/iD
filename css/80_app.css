@@ -4369,9 +4369,9 @@ img.tile {
 }
 
 /* Workaround to remove visible grid around tile borders on Chrome */
-/* with 3 exceptions for 110%, 80% and 67% browser zoom */
+/* with exceptions for 110%, 90%, 80% and 67% browser zoom */
 /* https://issues.chromium.org/issues/40084005  https://github.com/Leaflet/Leaflet/pull/8891  https://github.com/openstreetmap/iD/pull/10594 */
-@media not ((1.09 < -webkit-device-pixel-ratio < 1.11) or (0.79 < -webkit-device-pixel-ratio < 0.81) or (0.66 < -webkit-device-pixel-ratio < 0.68)) {
+@media not ((1.09 < -webkit-device-pixel-ratio < 1.11) or (0.89 < -webkit-device-pixel-ratio < 0.91) or (0.79 < -webkit-device-pixel-ratio < 0.81) or (0.66 < -webkit-device-pixel-ratio < 0.68)) {
     .layer-background img.tile {
         mix-blend-mode: plus-lighter;
     }

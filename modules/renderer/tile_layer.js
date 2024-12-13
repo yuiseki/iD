@@ -15,10 +15,33 @@ export function rendererTileLayer(context) {
     var _tileOrigin;
     var _zoom;
     var _source;
+    var _epsilon = 0;
 
+    // Workaround to remove visible grid around tile borders on Chrome with dynamic epsilon for specific browser zoom levels
+    // Should be removed when https://issues.chromium.org/issues/40084005 is resolved, https://github.com/openstreetmap/iD/pull/10594
+    if (window.chrome) {
+        updateEpsilon();
+        window.addEventListener('resize', updateEpsilon);
+    }
+    function updateEpsilon() {
+        switch (Math.round(window.devicePixelRatio * 100)) {
+            case 110:
+                _epsilon = 0.002;
+                break;
+            case 90:
+                _epsilon = 0.005;
+                break;
+            case 80:
+            case 67:
+                _epsilon = 0.003;
+                break;
+            default:
+                _epsilon = 0;
+        }
+    }
 
     function tileSizeAtZoom(d, z) {
-        return ((d.tileSize * Math.pow(2, z - d[2])) / d.tileSize);
+        return ((d.tileSize * Math.pow(2, z - d[2])) / d.tileSize) + _epsilon;
     }
 
 
