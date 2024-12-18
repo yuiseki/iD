@@ -4368,9 +4368,10 @@ img.tile {
     transition: opacity 120ms linear;
 }
 
-/* Workaround to remove visible grid around tile borders on Chrome */
-/* Only works with browser zoom multiple of 25 (75%, 100%, 125%...) */
-/* Should be removed when https://issues.chromium.org/issues/40084005 is resolved */
+/* Workaround to remove visible grid around tile borders on Chrome
+   Only works with browser zoom multiple of 25 (75%, 100%, 125%...) 
+   Should be removed when https://issues.chromium.org/issues/40084005 is resolved.
+   See https://github.com/openstreetmap/iD/pull/10594 */
 @media (-webkit-device-pixel-ratio = 1) or (-webkit-device-pixel-ratio = 1.25) or (-webkit-device-pixel-ratio = 1.5) or (-webkit-device-pixel-ratio = 1.75)
     or (-webkit-device-pixel-ratio = 2) or (-webkit-device-pixel-ratio = 2.25) or (-webkit-device-pixel-ratio = 2.5) or (-webkit-device-pixel-ratio = 2.75)
     or (-webkit-device-pixel-ratio = 3) or (-webkit-device-pixel-ratio = 3.25) or (-webkit-device-pixel-ratio = 3.5) or (-webkit-device-pixel-ratio = 3.75)
