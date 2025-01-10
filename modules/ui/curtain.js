@@ -160,8 +160,8 @@ export function uiCurtain(containerNode) {
             }
 
             // determine tooltip placement..
-
-            if (tooltipBox.top + tooltipBox.height < 100) {
+            const onLeftOrRightEdge = tooltipBox.left + tooltipBox.width / 2 > w - 100 || tooltipBox.left + tooltipBox.width / 2 < 100;
+            if (tooltipBox.top + tooltipBox.height < 100 && !onLeftOrRightEdge) {
                 // tooltip below box..
                 side = 'bottom';
                 pos = [
@@ -169,7 +169,7 @@ export function uiCurtain(containerNode) {
                     tooltipBox.top + tooltipBox.height
                 ];
 
-            } else if (tooltipBox.top > h - 140) {
+            } else if (tooltipBox.top > h - 140 && !onLeftOrRightEdge) {
                 // tooltip above box..
                 side = 'top';
                 pos = [
