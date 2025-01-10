@@ -54,6 +54,7 @@ _Breaking developer changes, which may affect downstream projects or sites that 
 * Add Ladin (language code `lld`) as an available option for multilingual names
 #### :hourglass: Performance
 #### :mortar_board: Walkthrough / Help
+* Fix walkthrough from showing tooltips on wrong location under certain circumstances ([#10650])
 #### :rocket: Presets
 #### :hammer: Development
 * Migrate unit tests from karma to vitest ([#10452])
@@ -66,6 +67,7 @@ _Breaking developer changes, which may affect downstream projects or sites that 
 [#10495]: https://github.com/openstreetmap/iD/issues/10495
 [#10508]: https://github.com/openstreetmap/iD/pull/10508
 [#10594]: https://github.com/openstreetmap/iD/pull/10594
+[#10650]: https://github.com/openstreetmap/iD/issues/10650
 [@winstonsung]: https://github.com/winstonsung/
 [@Nekzuris]: https://github.com/Nekzuris
 [@michaelabon]: https://github.com/michaelabon
