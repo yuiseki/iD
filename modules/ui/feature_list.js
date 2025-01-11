@@ -293,6 +293,7 @@ export function uiFeatureList(context) {
                 .attr('class', 'feature-list-item')
                 .on('pointerenter', mouseover)
                 .on('pointerleave', mouseout)
+                .on('focus', mouseover)
                 .on('blur', mouseout)
                 .on('click', click);
 
