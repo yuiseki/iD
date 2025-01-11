@@ -48,6 +48,7 @@ _Breaking developer changes, which may affect downstream projects or sites that 
 * Render highway direction cones only on matching parent ways ([#9013])
 * Prevent edit menu from being covered up by street level imagery or other map overlay panels ([#10495])
 * Fix grid lines from showing up on background map tiles in certain situations (semi-transparent tiles or fractional browser zoom level) ([#10594], thanks [@Nekzuris]) 
+* Prevent search results from sometimes getting stuck in the highlighted state when mouse-hovering the list of search results while typing ([#10661])
 #### :earth_asia: Localization
 * Update Sinitic languages in the Multilingual Names field ([#10488], thanks [@winstonsung])
 * Update the list of languages in the Wikipedia field ([#10489])
