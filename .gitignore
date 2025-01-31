@@ -13,8 +13,7 @@ transifex.auth
 /dist/*.map
 /dist/data/
 /dist/img/*.svg
-/dist/locales/*.json
-!/dist/locales/en.min.json
+/dist/locales/en.min.json
 /dist/mapillary-js/
 /dist/pannellum/
 
